@@ -1,0 +1,213 @@
+/*
+*{
+    background:rgb(0, 0, 0);
+  }
+*/
+
+/*
+.rolling{
+  color:rgb(217, 169, 219);
+  position:relative;
+  right:-800px;
+  top:-4000;
+  width: 300px;
+}
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img{
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.grid { display: grid; grid-template-columns: auto auto; }
+
+
+
+
+.title{
+  width: 500px;
+
+  margin-top: -100px;
+}
+
+
+
+
+/*-----------------warning sign------------*/
+
+
+.warningSign{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    width:300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+
+.artworksAhead{
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+  width:250px;
+  display: block;
+}
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+  
+
+/*-----------------PACMAN--------------*/
+
+
+  .pac-man{
+    position: relative;
+    top:100px;
+    left:100px;
+  }
+  .half{
+    width:50px;
+    height:25px;
+    overflow:hidden;
+    animation:rotate 1s ease infinite;
+    transform-origin: 50% 100%;
+  }
+  
+  .half-bottom{
+    transform-origin:50% 0%;
+    animation:rotate-bottom 1s ease infinite;
+  }
+  
+  .circle{
+    width:50px;
+    height:50px;
+    background:#d15ce3;
+    border-radius:50%;
+    
+  }
+  .bottom{
+    transform:translateY(-50%);
+  }
+  
+  .little-circle{
+    width:10px;
+    height:10px;
+    background:#dd29ed;
+    border-radius:50%;
+    position: absolute;
+    top: 50%;
+     left: 150px;
+    transform: translateY(-50%);
+  }
+  
+  .little-circle:nth-of-type(3) {
+    animation: walk-left 1s infinite linear;
+  }
+  
+  .little-circle:nth-of-type(4) {
+    animation: walk-left 1s infinite linear 0.5s ;
+  }
+/*-------------------*/
+
+  
+  @keyframes rotate{
+    0%{
+      transform:rotate(0deg);
+    }
+    50% {
+      transform:rotate(-45deg);
+    }
+    
+    100%{
+      transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes rotate-bottom{
+    0%{
+      transform:rotate(0deg);
+    }
+    50% {
+      transform:rotate(45deg);
+    }
+    
+    100%{
+      transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes walk-left{
+    0%{
+      opacity:0;
+    }
+    100%{
+      left:15px;
+      opacity: 1;
+    }
+  }
+  
+
+
+/*------------------frame animatiom------------*/
+
+
+
+.button{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
+img.button{
+  --s: 30px;  /* size of the frame */
+  --b: 10px;   /* border thickness */
+  --c: #5fcbfd;
+ 
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid rgba(29, 36, 240, 0.6);
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+
+
+

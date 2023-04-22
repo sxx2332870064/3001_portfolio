@@ -1,0 +1,93 @@
+.relative0{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(100, 62, 102, 0.5);
+}
+
+.relative1{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(255, 26, 244, 0.5);
+}
+
+.relative2{
+    position: relative;
+    margin-left: 340px;
+    width: 300px;
+    height: 475px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(247, 99, 255, 0.5);
+}
+
+.relative3{
+    position: relative;
+    margin-left: 680px;
+    width: 300px;
+    height: 75px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(255, 165, 240, 0.5);
+}
+
+a:hover{ /*a link when the user mouses over it*/
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkslateblue;
+    }
+
+a:active{ /*a link the moment is it clicked*/
+    color:darkturquoise;
+    }
+
+    
+.sticky{
+    position: sticky;
+    top: 0;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    background-color:rgba(107, 233, 239, 0.58);
+    margin-top: 25px;
+    border: 2px solid rgb(109, 113, 113);
+}
+
+.sticky1{
+    position: sticky;
+    top: 0;
+    height: 300px;
+    width: 800px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.relative10{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin-left: 200px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(100, 62, 102, 0.5);
+}
+
+.relative11{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin-left: 200px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(100, 62, 102, 0.5);
+}
+.relative12{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin-left: 200px;
+    border: 2px solidrgb(72, 210, 215);
+    background-color: rgba(100, 62, 102, 0.5);
+}
